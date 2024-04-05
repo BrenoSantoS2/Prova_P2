@@ -20,8 +20,8 @@ def ping_pong():
 @app.route('/echo', methods=['Post'])
 def echo():
     insert_log("/echo")
-    data = request.json
-    return data['message']
+    data = request.form["text"]
+    return data
 
 @app.route('/info', methods=['Get'])
 def info():
@@ -31,3 +31,6 @@ def info():
     hmtl_logs += "</ul>"
 
     return hmtl_logs
+
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -7,7 +7,21 @@
         <script src="https://unpkg.com/htmx.org@1.9.11"></script>
     <body>
         <h1>Prova P2</h1>
-        
+        <div>
+            <h2>Questão 1: Ping Pong</h2>
+            <button hx-get="/ping" hx-trigger="click" hx-target="#Pong">Ping</button>
+            <h3>Resposta:</h3>
+            <p id="Pong"></p>
+        </div>
+        <div>
+            <h2>Questão 2: Echo</h2>
+            
+            <form hx-post="/echo" hx-target="#Echo">
+                <input type="text" name="text">
+                <h3>Resposta</h3>
+                <p id="Echo"></p>
+                <button type="submit">Enviar</button>
+        </div>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
