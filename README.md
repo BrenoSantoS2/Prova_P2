@@ -9,6 +9,18 @@
 ## Como intalar requisitos
 Todos requistos do projetos estão disponíveis no arquivo Requiriments.txt.
 
-Para realizar o download dos requisitos utilize o comando:
+Primeiramente instale o ambiente virtual através do comando:
+
+python -m venv venv
+
+E inicie o ambiente através do comando:
+
+Se estiver no Windons: venv/Scripts/activate  
+
+Se estiver no com Git Bash: Source venv/Scripts/activate 
+
+Se estiver no Mac: venv/bin/activate
+
+E por último rode o comando abaixo para instalar as dependências
 
 pip install -r requiriments.txt
