@@ -11,4 +11,4 @@ Todos requistos do projetos estão disponíveis no arquivo Requiriments.txt.
 
 Para realizar o download dos requisitos utilize o comando:
 
-pip install -r requirements.txt
+pip install -r requiriments.txt
